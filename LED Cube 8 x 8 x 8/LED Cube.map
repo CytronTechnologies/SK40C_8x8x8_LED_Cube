@@ -1,0 +1,571 @@
+HI-TECH Software C Compiler 
+
+Linker command line:
+
+--edf=C:\Program Files (x86)\HI-TECH Software\PICC\9.82\dat\en_msgs.txt -cs \
+  -h+LED Cube.sym -z -Q16F877A -ol.obj -MLED Cube.map -E1 \
+  -ACONST=00h-0FFhx32 -ACODE=00h-07FFhx4 -ASTRCODE=00h-01FFFh \
+  -AENTRY=00h-0FFhx32 -ASTRING=00h-0FFhx32 -ABANK0=020h-06Fh \
+  -ABANK1=0A0h-0EFh -ABANK2=0110h-016Fh -ABANK3=0190h-01EFh \
+  -ARAM=020h-06Fh,0A0h-0EFh,0110h-016Fh,0190h-01EFh \
+  -AABS1=020h-07Fh,0A0h-0EFh,0110h-016Fh,0190h-01EFh -ACOMMON=070h-07Fh \
+  -ASFR0=00h-01Fh -ASFR1=080h-09Fh -ASFR2=0100h-010Fh -ASFR3=0180h-018Fh \
+  -preset_vec=00h,intentry,init,end_init -ppowerup=CODE -pfunctab=CODE \
+  -ACONFIG=02007h-02007h -pconfig=CONFIG -DCONFIG=2 -AIDLOC=02000h-02003h \
+  -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/02100h -peeprom_data=EEDATA \
+  -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
+  startup.obj LED Cube.obj 
+
+Object code version is 3.10
+
+Machine type is 16F877A
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+startup.obj     end_init                              0        0        3        0       0
+LED Cube.obj    config                             2007     2007        1     400E       0
+                text561                            1CC5     1CC5       20     398A       0
+                text560                            1D0F     1D0F       2C     3A1E       0
+                text559                            1D3B     1D3B       32     3A76       0
+                text558                             9E3      9E3      61D     13C6       0
+                text557                            1CE5     1CE5       2A     39CA       0
+                text556                              13       13       37       26       0
+                text555                            11DB     11DB      112     23B6       0
+                text554                            1451     1451      1A5     28A2       0
+                text553                            1DC4     1DC4       5C     3B88       0
+                text552                              4A       4A       9B       94       0
+                text551                            1E20     1E20       77     3C40       0
+                text550                            1F0E     1F0E       79     3E1C       0
+                text549                            1F87     1F87       79     3F0E       0
+                text548                            106D     106D       8A     20DA       0
+                text547                             802      802      1E1     1004       0
+                text546                            15F6     15F6      20A     2BEC       0
+                text545                              E5       E5      71B      1CA       0
+                text544                            10F7     10F7       E4     21EE       0
+                text543                            12ED     12ED      164     25DA       0
+                text542                            1E97     1E97       77     3D2E       0
+                text541                            1D6D     1D6D       57     3ADA       0
+                maintext                           1004     1004       69     2008       0
+                cstackBANK0                          20       20       2C       20       1
+                cstackCOMMON                         70       70        E       70       1
+                cstackBANK1                          A0       A0       46       A0       1
+                clrtext                            1C9F     1C9F        8     393E       0
+                bssBANK3                            190      190       10      190       1
+                bssBANK1                             E6       E6        8       A0       1
+                bssBANK0                             4C       4C       20       20       1
+                cinit                              1CA7     1CA7       1E     394E       0
+                strings                               3        3        D        6       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   CONST          
+
+        CLASS   CODE           
+                end_init                              0        0        3         0
+                text561                            1CC5     1CC5       20         0
+                text560                            1D0F     1D0F       2C         0
+                text559                            1D3B     1D3B       32         0
+                text558                             9E3      9E3      61D         0
+                text557                            1CE5     1CE5       2A         0
+                text556                              13       13       37         0
+                text555                            11DB     11DB      112         0
+                text554                            1451     1451      1A5         0
+                text553                            1DC4     1DC4       5C         0
+                text552                              4A       4A       9B         0
+                text551                            1E20     1E20       77         0
+                text550                            1F0E     1F0E       79         0
+                text549                            1F87     1F87       79         0
+                text548                            106D     106D       8A         0
+                text547                             802      802      1E1         0
+                text546                            15F6     15F6      20A         0
+                text545                              E5       E5      71B         0
+                text544                            10F7     10F7       E4         0
+                text543                            12ED     12ED      164         0
+                text542                            1E97     1E97       77         0
+                text541                            1D6D     1D6D       57         0
+                maintext                           1004     1004       69         0
+                clrtext                            1C9F     1C9F        8         0
+                cinit                              1CA7     1CA7       1E         0
+
+        CLASS   STRCODE        
+
+        CLASS   ENTRY          
+
+        CLASS   STRING         
+                strings                               3        3        D         0
+
+        CLASS   BANK0          
+                cstackBANK0                          20       20       2C         1
+                bssBANK0                             4C       4C       20         1
+
+        CLASS   BANK1          
+                cstackBANK1                          A0       A0       46         1
+                bssBANK1                             E6       E6        8         1
+
+        CLASS   BANK2          
+
+        CLASS   BANK3          
+                bssBANK3                            190      190       10         1
+
+        CLASS   RAM            
+
+        CLASS   ABS1           
+                abs_s1                               7E       7E        2         1
+
+        CLASS   COMMON         
+                cstackCOMMON                         70       70        E         1
+
+        CLASS   SFR0           
+
+        CLASS   SFR1           
+
+        CLASS   SFR2           
+
+        CLASS   SFR3           
+
+        CLASS   CONFIG         
+                config                             2007     2007        1         0
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
+
+                reset_vec                      000000  000003  000003         0       0  CODE        2
+                strings                        000003  00000D  000010         6       0  STRING      2
+                cstackBANK0                    000020  00004C  00006C        20       1  BANK0       1
+                text556                        000013  000037  00004A        26       0  CODE        2
+                cstackCOMMON                   000070  00000E  00007E        70       1  COMMON      1
+                text552                        00004A  00009B  0000E5        94       0  CODE        2
+                cstackBANK1                    0000A0  00004E  0000EE        A0       1  BANK1       1
+                bssBANK3                       000190  000010  0001A0       190       1  BANK3       1
+                text545                        0000E5  00071B  000800       1CA       0  CODE        2
+                text547                        000802  0001E1  0009E3      1004       0  CODE        2
+                text558                        0009E3  00061D  001000      13C6       0  CODE        2
+                maintext                       001004  000069  00106D      2008       0  CODE        2
+                text548                        00106D  00008A  0010F7      20DA       0  CODE        2
+                text544                        0010F7  0000E4  0011DB      21EE       0  CODE        2
+                text555                        0011DB  000112  0012ED      23B6       0  CODE        2
+                text543                        0012ED  000164  001451      25DA       0  CODE        2
+                text554                        001451  0001A5  0015F6      28A2       0  CODE        2
+                text546                        0015F6  00020A  001800      2BEC       0  CODE        2
+                clrtext                        001C9F  000008  001CA7      393E       0  CODE        2
+                cinit                          001CA7  00001E  001CC5      394E       0  CODE        2
+                text561                        001CC5  000020  001CE5      398A       0  CODE        2
+                text557                        001CE5  00002A  001D0F      39CA       0  CODE        2
+                text560                        001D0F  00002C  001D3B      3A1E       0  CODE        2
+                text559                        001D3B  000032  001D6D      3A76       0  CODE        2
+                text541                        001D6D  000057  001DC4      3ADA       0  CODE        2
+                text553                        001DC4  00005C  001E20      3B88       0  CODE        2
+                text551                        001E20  000077  001E97      3C40       0  CODE        2
+                text542                        001E97  000077  001F0E      3D2E       0  CODE        2
+                text550                        001F0E  000079  001F87      3E1C       0  CODE        2
+                text549                        001F87  000079  002000      3F0E       0  CODE        2
+                config                         002007  000001  002008      400E       0  CONFIG      2
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            006C-006F              4           1
+        BANK1            00EE-00EF              2           1
+        BANK2            0110-016F             60           1
+        BANK3            01A0-01EF             50           1
+        CODE             0010-0012              3           2
+                         0800-0801              2
+                         1000-1003              4
+                         1800-1C9E            49F
+        CONST            0010-0012              3           2
+                         0800-0801              2
+                         1000-1003              4
+                         1800-1C9E            100
+        EEDATA           2100-21FF            100           2
+        ENTRY            0010-0012              3           2
+                         0800-0801              2
+                         1000-1003              4
+                         1800-1C9E            100
+        IDLOC            2000-2003              4           2
+        RAM              006C-006F              4           1
+                         00EE-00EF              2
+                         0110-016F             60
+                         01A0-01EF             50
+        SFR0             0000-001F             20           1
+        SFR1             0080-009F             20           1
+        SFR2             0100-010F             10           1
+        SFR3             0180-018F             10           1
+        STRCODE          0010-0012              3           2
+                         0800-0801              2
+                         1000-1003              4
+                         1800-1C9E            49F
+        STRING           0010-0012              3           2
+                         0800-0801              2
+                         1000-1003              4
+                         1800-1C9E            100
+
+                                  Symbol Table
+
+??___wmul                                           cstackCOMMON 0074
+??_choose_alphabet                                  cstackCOMMON 0071
+??_choose_dice                                      cstackCOMMON 0075
+??_choose_mode                                      cstackCOMMON 007C
+??_contraction_expansion_square_ri                  cstackCOMMON 0075
+??_delay                                            cstackCOMMON 007A
+??_delay_using_adc                                  cstackBANK0  0020
+??_dice                                             cstackBANK0  003A
+??_expansion_box                                    cstackCOMMON 0075
+??_flying_character_of_a_word                       cstackCOMMON 0075
+??_get_adc_value                                    cstackCOMMON 0072
+??_io_init                                          cstackCOMMON 0070
+??_main                                             cstackBANK0  004A
+??_moving_point_in_sequence                         cstackCOMMON 007E
+??_plane_bottom_to_top                              cstackBANK0  0025
+??_plane_forward_to_back                            cstackBANK0  0025
+??_plane_left_to_right                              cstackCOMMON 007E
+??_rotate_plane                                     cstackCOMMON 0075
+??_set_a_plane                                      cstackCOMMON 0071
+??_set_a_point                                      cstackCOMMON 0076
+??_show_mode                                        cstackCOMMON 0075
+??_show_pattern_on_a_plane                          cstackCOMMON 0072
+?___wmul                                            cstackCOMMON 0070
+?_choose_alphabet                                   cstackCOMMON 0070
+?_choose_dice                                       cstackCOMMON 0070
+?_choose_mode                                       cstackCOMMON 0070
+?_contraction_expansion_square_ri                   cstackCOMMON 0070
+?_delay                                             cstackCOMMON 0076
+?_delay_using_adc                                   cstackCOMMON 0070
+?_dice                                              cstackCOMMON 0070
+?_expansion_box                                     cstackCOMMON 0070
+?_flying_character_of_a_word                        cstackCOMMON 0070
+?_get_adc_value                                     cstackCOMMON 0070
+?_io_init                                           cstackCOMMON 0070
+?_main                                              cstackCOMMON 0070
+?_moving_point_in_sequence                          cstackCOMMON 0070
+?_plane_bottom_to_top                               cstackCOMMON 0070
+?_plane_forward_to_back                             cstackCOMMON 0070
+?_plane_left_to_right                               cstackCOMMON 0070
+?_rotate_plane                                      cstackCOMMON 0070
+?_set_a_plane                                       cstackCOMMON 0070
+?_set_a_point                                       cstackCOMMON 0070
+?_show_mode                                         cstackCOMMON 0070
+?_show_pattern_on_a_plane                           cstackCOMMON 0070
+_ADCS0                                              (abs)        00FE
+_ADCS1                                              (abs)        00FF
+_ADFM                                               (abs)        04FF
+_ADIF                                               (abs)        0066
+_ADON                                               (abs)        00F8
+_ADRESH                                             (abs)        001E
+_ADRESL                                             (abs)        009E
+_CARRY                                              (abs)        0018
+_CHS0                                               (abs)        00FB
+_CHS1                                               (abs)        00FC
+_CHS2                                               (abs)        00FD
+_EEADR                                              (abs)        010D
+_EECON1                                             (abs)        018C
+_EECON2                                             (abs)        018D
+_EEDATA                                             (abs)        010C
+_GIE                                                (abs)        005F
+_GO                                                 (abs)        00FA
+_PCFG0                                              (abs)        04F8
+_PCFG1                                              (abs)        04F9
+_PCFG2                                              (abs)        04FA
+_PCFG3                                              (abs)        04FB
+_PORTA                                              (abs)        0005
+_PORTB                                              (abs)        0006
+_PORTC                                              (abs)        0007
+_PORTD                                              (abs)        0008
+_PORTE                                              (abs)        0009
+_RA1                                                (abs)        0029
+_RB0                                                (abs)        0030
+_RB1                                                (abs)        0031
+_RD                                                 (abs)        0C60
+_TRISA                                              (abs)        0085
+_TRISB                                              (abs)        0086
+_TRISC                                              (abs)        0087
+_TRISD                                              (abs)        0088
+_TRISE                                              (abs)        0089
+_WR                                                 (abs)        0C61
+_WREN                                               (abs)        0C62
+__Habs1                                             abs1         0000
+__Hbank0                                            bank0        0000
+__Hbank1                                            bank1        0000
+__Hbank2                                            bank2        0000
+__Hbank3                                            bank3        0000
+__HbssBANK0                                         bssBANK0     0000
+__HbssBANK1                                         bssBANK1     0000
+__HbssBANK3                                         bssBANK3     0000
+__Hcinit                                            cinit        0000
+__Hclrtext                                          clrtext      0000
+__Hcode                                             code         0000
+__Hcommon                                           common       0000
+__Hconfig                                           config       2008
+__HcstackBANK0                                      cstackBANK0  0000
+__HcstackBANK1                                      cstackBANK1  0000
+__HcstackCOMMON                                     cstackCOMMON 0000
+__Heeprom_data                                      eeprom_data  0000
+__Hend_init                                         end_init     0003
+__Hfunctab                                          functab      0000
+__Hidloc                                            idloc        0000
+__Hinit                                             init         0000
+__Hintentry                                         intentry     0000
+__Hmaintext                                         maintext     0000
+__Hpowerup                                          powerup      0000
+__Hram                                              ram          0000
+__Hreset_vec                                        reset_vec    0000
+__Hsfr0                                             sfr0         0000
+__Hsfr1                                             sfr1         0000
+__Hsfr2                                             sfr2         0000
+__Hsfr3                                             sfr3         0000
+__Hstrings                                          strings      0000
+__Htext                                             text         0000
+__Labs1                                             abs1         0000
+__Lbank0                                            bank0        0000
+__Lbank1                                            bank1        0000
+__Lbank2                                            bank2        0000
+__Lbank3                                            bank3        0000
+__LbssBANK0                                         bssBANK0     0000
+__LbssBANK1                                         bssBANK1     0000
+__LbssBANK3                                         bssBANK3     0000
+__Lcinit                                            cinit        0000
+__Lclrtext                                          clrtext      0000
+__Lcode                                             code         0000
+__Lcommon                                           common       0000
+__Lconfig                                           config       2007
+__LcstackBANK0                                      cstackBANK0  0000
+__LcstackBANK1                                      cstackBANK1  0000
+__LcstackCOMMON                                     cstackCOMMON 0000
+__Leeprom_data                                      eeprom_data  0000
+__Lend_init                                         end_init     0000
+__Lfunctab                                          functab      0000
+__Lidloc                                            idloc        0000
+__Linit                                             init         0000
+__Lintentry                                         intentry     0000
+__Lmaintext                                         maintext     0000
+__Lpowerup                                          powerup      0000
+__Lram                                              ram          0000
+__Lreset_vec                                        reset_vec    0000
+__Lsfr0                                             sfr0         0000
+__Lsfr1                                             sfr1         0000
+__Lsfr2                                             sfr2         0000
+__Lsfr3                                             sfr3         0000
+__Lstrings                                          strings      0000
+__Ltext                                             text         0000
+__S0                                                (abs)        2008
+__S1                                                (abs)        01A0
+__S2                                                (abs)        0000
+___wmul                                             text557      1CE5
+___wmul@multiplicand                                cstackCOMMON 0072
+___wmul@multiplier                                  cstackCOMMON 0070
+___wmul@product                                     cstackCOMMON 0074
+__end_of___wmul                                     text557      1D0F
+__end_of_choose_alphabet                            text558      1000
+__end_of_choose_dice                                text543      1451
+__end_of_choose_mode                                text542      1F0E
+__end_of_contraction_expansion_square_ri            text547      09E3
+__end_of_delay                                      text559      1D6D
+__end_of_delay_using_adc                            text556      004A
+__end_of_dice                                       text541      1DC4
+__end_of_expansion_box                              text546      1800
+__end_of_flying_character_of_a_word                 text548      10F7
+__end_of_get_adc_value                              text560      1D3B
+__end_of_io_init                                    text561      1CE5
+__end_of_main                                       maintext     106D
+__end_of_moving_point_in_sequence                   text552      00E5
+__end_of_plane_bottom_to_top                        text549      2000
+__end_of_plane_forward_to_back                      text550      1F87
+__end_of_plane_left_to_right                        text551      1E97
+__end_of_rotate_plane                               text545      0800
+__end_of_set_a_plane                                text555      12ED
+__end_of_set_a_point                                text553      1E20
+__end_of_show_mode                                  text544      11DB
+__end_of_show_pattern_on_a_plane                    text554      15F6
+__pbssBANK0                                         bssBANK0     004C
+__pbssBANK1                                         bssBANK1     00E6
+__pbssBANK3                                         bssBANK3     0190
+__pcstackBANK0                                      cstackBANK0  0020
+__pcstackBANK1                                      cstackBANK1  00A0
+__pcstackCOMMON                                     cstackCOMMON 0070
+__pmaintext                                         maintext     1004
+__pstrings                                          strings      0003
+__ptext540                                          text540      0000
+__ptext541                                          text541      1D6D
+__ptext542                                          text542      1E97
+__ptext543                                          text543      12ED
+__ptext544                                          text544      10F7
+__ptext545                                          text545      00E5
+__ptext546                                          text546      15F6
+__ptext547                                          text547      0802
+__ptext548                                          text548      106D
+__ptext549                                          text549      1F87
+__ptext550                                          text550      1F0E
+__ptext551                                          text551      1E20
+__ptext552                                          text552      004A
+__ptext553                                          text553      1DC4
+__ptext554                                          text554      1451
+__ptext555                                          text555      11DB
+__ptext556                                          text556      0013
+__ptext557                                          text557      1CE5
+__ptext558                                          text558      09E3
+__ptext559                                          text559      1D3B
+__ptext560                                          text560      1D0F
+__ptext561                                          text561      1CC5
+__ptext562                                          text562      0000
+__size_of___wmul                                    (abs)        0000
+__size_of_choose_alphabet                           (abs)        0000
+__size_of_choose_dice                               (abs)        0000
+__size_of_choose_mode                               (abs)        0000
+__size_of_contraction_expansion_square_ri           (abs)        0000
+__size_of_delay                                     (abs)        0000
+__size_of_delay_using_adc                           (abs)        0000
+__size_of_dice                                      (abs)        0000
+__size_of_expansion_box                             (abs)        0000
+__size_of_flying_character_of_a_word                (abs)        0000
+__size_of_get_adc_value                             (abs)        0000
+__size_of_io_init                                   (abs)        0000
+__size_of_main                                      (abs)        0000
+__size_of_moving_point_in_sequence                  (abs)        0000
+__size_of_plane_bottom_to_top                       (abs)        0000
+__size_of_plane_forward_to_back                     (abs)        0000
+__size_of_plane_left_to_right                       (abs)        0000
+__size_of_rotate_plane                              (abs)        0000
+__size_of_set_a_plane                               (abs)        0000
+__size_of_set_a_point                               (abs)        0000
+__size_of_show_mode                                 (abs)        0000
+__size_of_show_pattern_on_a_plane                   (abs)        0000
+_choose_alphabet                                    text558      09E3
+_choose_dice                                        text543      12ED
+_choose_mode                                        text542      1E97
+_contraction_expansion_square_ri                    text547      0802
+_delay                                              text559      1D3B
+_delay_using_adc                                    text556      0013
+_dice                                               text541      1D6D
+_exit                                               init         0000
+_expansion_box                                      text546      15F6
+_flying_character_of_a_word                         text548      106D
+_get_adc_value                                      text560      1D0F
+_io_init                                            text561      1CC5
+_main                                               maintext     1004
+_moving_point_in_sequence                           text552      004A
+_plane_bottom_to_top                                text549      1F87
+_plane_forward_to_back                              text550      1F0E
+_plane_left_to_right                                text551      1E20
+_rotate_plane                                       text545      00E5
+_set_a_plane                                        text555      11DB
+_set_a_point                                        text553      1DC4
+_show_mode                                          text544      10F7
+_show_pattern_on_a_plane                            text554      1451
+btemp                                               (abs)        007E
+choose_alphabet@alphabet                            cstackCOMMON 0072
+choose_alphabet@alphabet_array                      cstackCOMMON 0070
+choose_dice@F1183                                   bssBANK1     00E6
+choose_dice@dice_pattern                            cstackBANK0  0032
+choose_dice@number                                  cstackBANK0  0031
+choose_dice@temp_switch                             cstackBANK0  0030
+choose_mode@i                                       cstackBANK0  0039
+choose_mode@temp_mode                               cstackBANK0  003B
+clear_ram                                           clrtext      1C9F
+contraction_expansion_square_ri@F1168               bssBANK0     004C
+contraction_expansion_square_ri@i                   cstackBANK0  0030
+contraction_expansion_square_ri@square_ring_pattern cstackBANK0  0032
+delay@time                                          cstackCOMMON 0076
+delay_using_adc@adc_delay                           cstackBANK0  0022
+delay_using_adc@scale                               cstackBANK0  0024
+dice@i                                              cstackCOMMON 007C
+end_of_initialization                               cinit        1CC1
+expansion_box@F1188                                 bssBANK3     0190
+expansion_box@box_pattern                           cstackBANK0  0042
+expansion_box@i                                     cstackBANK0  0030
+expansion_box@i_3052                                cstackBANK0  0032
+expansion_box@i_3054                                cstackBANK0  0034
+expansion_box@i_3056                                cstackBANK0  0036
+expansion_box@j                                     cstackBANK0  0038
+expansion_box@j_3053                                cstackBANK0  003A
+expansion_box@j_3055                                cstackBANK0  003C
+expansion_box@j_3057                                cstackBANK0  003E
+expansion_box@time                                  cstackBANK0  0040
+flying_alphabet@F1155                               bssBANK0     0054
+flying_character_of_a_word@F1162                    bssBANK0     005C
+flying_character_of_a_word@alphabet_pattern         cstackBANK0  0035
+flying_character_of_a_word@i                        cstackBANK0  0031
+flying_character_of_a_word@j                        cstackBANK0  0033
+flying_character_of_a_word@word                     cstackBANK0  0030
+get_adc_value@local_adc_value                       cstackCOMMON 0074
+intlevel0                                           functab      0000
+intlevel1                                           functab      0000
+intlevel2                                           functab      0000
+intlevel3                                           functab      0000
+intlevel4                                           functab      0000
+intlevel5                                           functab      0000
+main@mode                                           cstackBANK0  004B
+moving_point_in_sequence@i                          cstackBANK0  0025
+moving_point_in_sequence@j                          cstackBANK0  0027
+moving_point_in_sequence@k                          cstackBANK0  0029
+plane_bottom_to_top@i                               cstackBANK0  0026
+plane_bottom_to_top@i_3015                          cstackBANK0  0028
+plane_forward_to_back@i                             cstackBANK0  0026
+plane_forward_to_back@i_3018                        cstackBANK0  0028
+plane_left_to_right@i                               cstackBANK0  0025
+plane_left_to_right@i_3012                          cstackBANK0  0027
+reset_vec                                           reset_vec    0000
+rotate_plane@F1204                                  bssBANK3     0198
+rotate_plane@i                                      cstackBANK1  00A0
+rotate_plane@i_3064                                 cstackBANK1  00A2
+rotate_plane@i_3066                                 cstackBANK1  00A4
+rotate_plane@i_3068                                 cstackBANK1  00A6
+rotate_plane@i_3070                                 cstackBANK1  00A8
+rotate_plane@i_3072                                 cstackBANK1  00AA
+rotate_plane@i_3074                                 cstackBANK1  00AC
+rotate_plane@i_3076                                 cstackBANK1  00AE
+rotate_plane@i_3078                                 cstackBANK1  00B0
+rotate_plane@i_3080                                 cstackBANK1  00B2
+rotate_plane@i_3082                                 cstackBANK1  00B4
+rotate_plane@i_3084                                 cstackBANK1  00B6
+rotate_plane@i_3086                                 cstackBANK1  00B8
+rotate_plane@i_3088                                 cstackBANK1  00BA
+rotate_plane@i_3090                                 cstackBANK1  00BC
+rotate_plane@j                                      cstackBANK1  00BE
+rotate_plane@j_3065                                 cstackBANK1  00C0
+rotate_plane@j_3067                                 cstackBANK1  00C2
+rotate_plane@j_3069                                 cstackBANK1  00C4
+rotate_plane@j_3071                                 cstackBANK1  00C6
+rotate_plane@j_3073                                 cstackBANK1  00C8
+rotate_plane@j_3075                                 cstackBANK1  00CA
+rotate_plane@j_3077                                 cstackBANK1  00CC
+rotate_plane@j_3079                                 cstackBANK1  00CE
+rotate_plane@j_3081                                 cstackBANK1  00D0
+rotate_plane@j_3083                                 cstackBANK1  00D2
+rotate_plane@j_3085                                 cstackBANK1  00D4
+rotate_plane@j_3087                                 cstackBANK1  00D6
+rotate_plane@j_3089                                 cstackBANK1  00D8
+rotate_plane@j_3091                                 cstackBANK1  00DA
+rotate_plane@rotate_pattern                         cstackBANK1  00DE
+rotate_plane@time                                   cstackBANK1  00DC
+set_a_plane@j                                       cstackCOMMON 0073
+set_a_plane@j_2156                                  cstackCOMMON 0075
+set_a_plane@j_2157                                  cstackCOMMON 0077
+set_a_plane@j_2158                                  cstackCOMMON 0079
+set_a_plane@layer                                   cstackCOMMON 007B
+set_a_plane@plane                                   cstackCOMMON 0070
+set_a_point@j                                       cstackCOMMON 0078
+set_a_point@x                                       cstackCOMMON 0070
+set_a_point@y                                       cstackCOMMON 0072
+set_a_point@z                                       cstackCOMMON 0074
+show_mode@F1153                                     bssBANK0     0064
+show_mode@mode                                      cstackBANK0  0030
+show_mode@mode_pattern                              cstackBANK0  0031
+show_pattern_on_a_plane@adc_delay                   cstackBANK0  0020
+show_pattern_on_a_plane@i                           cstackBANK0  002C
+show_pattern_on_a_plane@i_2167                      cstackBANK0  002E
+show_pattern_on_a_plane@j                           cstackBANK0  0027
+show_pattern_on_a_plane@j_2168                      cstackBANK0  0023
+show_pattern_on_a_plane@j_2169                      cstackBANK0  0025
+show_pattern_on_a_plane@j_2170                      cstackBANK0  0029
+show_pattern_on_a_plane@layer                       cstackBANK0  002B
+show_pattern_on_a_plane@pattern_array               cstackCOMMON 0071
+show_pattern_on_a_plane@plane                       cstackCOMMON 0070
+show_pattern_on_a_plane@scale                       cstackBANK0  0022
+start                                               init         0000
+start_initialization                                cinit        1CA7
+wtemp0                                              (abs)        007E

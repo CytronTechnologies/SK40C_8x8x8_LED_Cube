@@ -1,0 +1,23 @@
+_plane_left_to_right: CODE, 7712 0 119
+_set_a_plane: CODE, 4571 0 274
+_set_a_point: CODE, 7620 0 92
+_delay: CODE, 7483 0 50
+_rotate_plane: CODE, 229 0 1819
+_choose_alphabet: CODE, 2531 0 1565
+_moving_point_in_sequence: CODE, 74 0 155
+_plane_bottom_to_top: CODE, 8071 0 121
+_main: CODE, 4100 0 105
+_dice: CODE, 7533 0 87
+_contraction_expansion_square_ri: CODE, 2050 0 481
+_show_pattern_on_a_plane: CODE, 5201 0 421
+_io_init: CODE, 7365 0 32
+_choose_dice: CODE, 4845 0 356
+_choose_mode: CODE, 7831 0 119
+_show_mode: CODE, 4343 0 228
+_expansion_box: CODE, 5622 0 522
+_flying_character_of_a_word: CODE, 4205 0 138
+_delay_using_adc: CODE, 19 0 55
+_get_adc_value: CODE, 7439 0 44
+_plane_forward_to_back: CODE, 7950 0 121
+___wmul: CODE, 7397 0 42
+Total: 6946
